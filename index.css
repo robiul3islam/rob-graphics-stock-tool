@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@theme{--color-midnight:#0B0F1A;--color-surface:#121829;--color-card:#171E33;--color-violet:#7C3AED;--color-cyan:#22D3EE;--color-amber:#FFB020;--color-ok:#34D399;--color-bad:#F43F5E;--color-ink:#E6E9F5;--color-muted:#8B93AD;
+--font-sora:Sora,sans-serif;--font-mono:'JetBrains Mono',monospace}
+body{background:radial-gradient(900px 500px at 10% -10%,#7c3aed26,transparent),radial-gradient(700px 400px at 100% 0,#22d3ee1a,transparent),#0B0F1A;color:#E6E9F5;font-family:Inter,sans-serif;min-height:100vh}
+.glass{background:#171e33b3;backdrop-filter:blur(12px);border:1px solid #7c3aed33;box-shadow:0 0 0 1px #22d3ee0d,0 10px 40px -12px #7c3aed55}
+.btn{background:linear-gradient(90deg,#7C3AED,#22D3EE);box-shadow:0 6px 24px -8px #7c3aedaa;transition:.2s}.btn:hover{transform:translateY(-1px);filter:brightness(1.1)}.btn:disabled{opacity:.4;transform:none}
+.orb{width:22px;height:22px;border-radius:50%;border:3px solid transparent;border-top-color:#22D3EE;border-right-color:#7C3AED;animation:spin .8s linear infinite;box-shadow:0 0 14px #7c3aed99}
+@keyframes spin{to{transform:rotate(360deg)}}
+.fade{animation:fade .35s ease both}@keyframes fade{from{opacity:0;transform:translateY(6px)}}
